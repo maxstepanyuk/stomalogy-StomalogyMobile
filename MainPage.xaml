@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StomalogyMobile.MainPage"
+             Title="Мої пацієнти">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Picker x:Name="dentistPicker"/>
+            <Label Text="Виберіть дату" FontSize="22" Margin="10, 10, 0, 0"/>
+            <DatePicker x:Name="datePicker" Format="d"/>
+            <VerticalStackLayout x:Name="stack">
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
